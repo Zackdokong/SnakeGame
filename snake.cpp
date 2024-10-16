@@ -27,19 +27,19 @@ void update_snake() {
     
     // 방향에 따라 머리 위치 업데이트
     switch (direction) {
-        case 1: // 오른쪽
-            snake[0].y += 1;
-            break;
-        case 2: // 아래
-            snake[0].x += 1;
-            break;
-        case 3: // 왼쪽
-            snake[0].y -= 1;
-            break;
-        case 4: // 위
-            snake[0].x -= 1;
-            break;
-    }
+    case 0: // 오른쪽
+        snake[0].y += 1;
+        break;
+    case 1: // 아래
+        snake[0].x += 1;
+        break;
+    case 2: // 왼쪽
+        snake[0].y -= 1;
+        break;
+    case 3: // 위
+        snake[0].x -= 1;
+        break;
+}
     
     board[prev_x][prev_y] = EMPTY;
 
