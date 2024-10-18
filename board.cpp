@@ -28,18 +28,22 @@ void draw_board() {
 	system("cls"); //이전에 그린 내용 지우기 
 	
     // 보드 그리기
+    // 깜빡거림 해결위해서 뱀만 그리게해야됨
+	// 버퍼에 다 그려놓고 한번에 출력하는 방법도 있음 
     for (int i = 0; i < BOARD_SIZE; i++) {
         for (int j = 0; j < BOARD_SIZE; j++) {
-            printf("%c ", board[i][j]);
+        	printf("%c ", board([i][j]);
         }
         printf("\n");
     }
     
-    Sleep(16); // 화면이 너무 깜빡거려서 약간 딜레이 줌 
+    Sleep(1); // 화면이 너무 깜빡거려서 약간 딜레이 줌 
 }
 
 // 먹이 위치를 보드에 표시하는 함수
 void place_food(int food_x, int food_y) {
     board[food_x][food_y] = FOOD;  // 먹이 위치에 먹이 배치
 }
+
+printf("집 가고 싶다....");
 

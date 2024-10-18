@@ -11,7 +11,7 @@ typedef struct {
 
 SnakePart snake[100]; // 뱀의 몸통을 저장할 배열
 int snake_length = INITIAL_LENGTH; // 뱀의 길이
-int direction = 1; // 초기 방향 (1: 오른쪽, 2: 아래, 3: 왼쪽, 4: 위)
+int direction = 0; // 초기 방향 (0: 오른쪽, 1: 아래, 2: 왼쪽, 3: 위)
 
 void init_snake() {
     snake[0].x = BOARD_SIZE / 2; // 초기 x 위치
