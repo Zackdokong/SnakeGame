@@ -24,6 +24,7 @@ void init_board() {
             }
         }
     }
+    place_food();
 }
 
 void draw_board() {

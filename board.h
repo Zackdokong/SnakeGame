@@ -13,7 +13,7 @@ extern int food_y;
 
 void init_board(); // 보드 초기화 함수 선언
 void draw_board(); // 보드 그리기 함수 선언
-void place_food(int food_x, int food_y); // 먹이 배치 함수 선언
+void place_food(); // 먹이 배치 함수 선언
 
 #endif // BOARD_H
 
