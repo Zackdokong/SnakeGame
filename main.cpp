@@ -8,7 +8,7 @@ int main() {
     init_snake();      // 뱀 초기화
     
     while (1) {
-    	draw_board();  // 보드 그리기
+        draw_board();  // 보드 그리기
         process_input(); // 입력 처리
         update_snake();  // 뱀 이동 업데이트
         if (check_collision()) {  // 충돌 체크
@@ -18,3 +18,4 @@ int main() {
     }
     return 0;
 }
+

@@ -8,6 +8,8 @@
 extern char board[BOARD_SIZE][BOARD_SIZE];
 extern int direction;
 
+
+
 // 함수 선언
 void init_snake();
 void update_snake();
