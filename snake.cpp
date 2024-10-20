@@ -56,6 +56,7 @@ void update_snake() {
     if (check_food()) {
         grow_snake(); // 길이 증가
         place_food(); // 새로운 먹이 위치
+        board[prev_x][prev_y] = EMPTY;
     } else {
         board[prev_x][prev_y] = EMPTY; // 이전 머리 위치 지우기
     }
