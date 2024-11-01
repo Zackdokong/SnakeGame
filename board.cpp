@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <time.h>
+#include "snake.h"
 
 #define BOARD_SIZE 30
 #define EMPTY ' '   // 빈 공간
@@ -39,6 +40,7 @@ void draw_board() {
     }
     
     Sleep(16); // 화면이 너무 깜빡거려서 약간 딜레이 줌 
+    printf("점수: %d", snake_length);
 }
 
 // 먹이 위치를 보드에 표시하는 함수

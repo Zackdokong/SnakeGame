@@ -7,7 +7,7 @@
 // 보드 배열 외부 선언
 extern char board[BOARD_SIZE][BOARD_SIZE];
 extern int direction;
-
+extern int snake_length;
 
 
 // 함수 선언
