@@ -10,16 +10,16 @@ void process_input() {
     if (_kbhit()) {
         switch (_getch()) {
             case UP_KEY:
-                direction = 4; // 방향 위로
+                if(direction != 2) direction = 4; // 방향 위로
                 break;
             case DOWN_KEY:
-                direction = 2; // 방향 아래로
+                if(direction != 4) direction = 2; // 방향 아래로
                 break;
             case LEFT_KEY:
-                direction = 3; // 방향 왼쪽으로
+                if(direction != 1) direction = 3; // 방향 왼쪽으로
                 break;
             case RIGHT_KEY:
-                direction = 1; // 방향 오른쪽으로
+                if(direction != 3) direction = 1; // 방향 오른쪽으로
                 break;
         }
     }
