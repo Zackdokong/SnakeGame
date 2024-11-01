@@ -32,23 +32,27 @@ int check_food() {
 
 void update_snake() {
     // 이전 머리 위치 저장
-    int prev_x = snake[0].x;
-    int prev_y = snake[0].y;
+    int prev_x = snake[snake_length-1].x;
+    int prev_y = snake[snake_length-1].y;
     int temp_x, temp_y;
     
     // 방향에 따라 머리 위치 업데이트
     switch (direction) {
         case 1: // 오른쪽
-            snake[0].y += 1;
+        	for(int i = 0; i < snake_length; i++)
+        		snake[i].y += 1;
             break;
         case 2: // 아래
-            snake[0].x += 1;
-            break;
+            for(int i = 0; i < snake_length; i++)
+				snake[i].x += 1;
+			break;
         case 3: // 왼쪽
-            snake[0].y -= 1;
+            for(int i = 0; i < snake_length; i++)
+				snake[i].y -= 1;
             break;
         case 4: // 위
-            snake[0].x -= 1;
+            for(int i = 0; i < snake_length; i++)
+				snake[i].x -= 1;
             break;
     }
 
