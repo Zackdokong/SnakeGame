@@ -15,7 +15,6 @@ SnakePart snake[100]; // 뱀의 몸통을 저장할 배열
 int snake_length = INITIAL_LENGTH; // 뱀의 길이
 int direction = 1; // 초기 방향 (1: 오른쪽, 2: 아래, 3: 왼쪽, 4: 위)
 
-
 void init_snake() {
     snake[0].x = BOARD_SIZE / 2; // 초기 x 위치
     snake[0].y = BOARD_SIZE / 2; // 초기 y 위치
@@ -56,7 +55,7 @@ void update_snake() {
     if (check_food()) {
         grow_snake(); // 길이 증가
         place_food(); // 새로운 먹이 위치
-        //board[prev_x][prev_y] = EMPTY;
+        board[prev_x][prev_y] = EMPTY;
     } else {
         board[prev_x][prev_y] = EMPTY; // 이전 머리 위치 지우기
     }
@@ -95,6 +94,3 @@ int check_collision() {
 void grow_snake() {
     snake_length++;
 }
-
-
-
